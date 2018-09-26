@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/psf/Home/SLAMCode/0002code/core/algorithm_vehicle_localization/common/Thirdparty/DBow3/src/quicklz.c
+quicklz.h
+/media/psf/Home/SLAMCode/0002code/core/algorithm_vehicle_localization/common/Thirdparty/DBow3/src/quicklz.h
+
+/media/psf/Home/SLAMCode/0002code/core/algorithm_vehicle_localization/common/Thirdparty/DBow3/src/quicklz.h
+string.h
+-
+

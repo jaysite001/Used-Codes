@@ -1,0 +1,8 @@
+algorithm_vehicle/offlinSLAM下的SLAMSystem生成每一帧图像的SGD描述符，BA之后的所有描述符，原始的点云pcd文件；
+kmeans.py：对描述符进行聚类，基于聚类结果给每个描述符打标签，saveddesBA中存在空行，需要吧label文件补齐，根据标签文件，对pcd文件中的每个点上不同的颜色，保存为新的pcd点云文件；
+
+feature_training：利用每一帧的描述符计算得到词袋字典；
+loop_closure：计算每一帧的BoW vector；
+sumbowvector.py：对所有BoW vector求和，得到字典中每个WORD的频度分布；
+calculate_des_over_threshold：设定阈值，找出频度超过阈值的word，然后根据SGD对应的WORD将BA之后的描述符分为两类，打上不同的标签。
+recolor_pcdfile.py：修正calculate_des_over_threshold生成的标签文件，根据标签对pcd文件中的点着不同的颜色，并显示。
